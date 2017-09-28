@@ -1,4 +1,4 @@
-## Hello_Jenkins <img align="right" src="img/liatrio.png">
+## Hello_Jenkins
 This simple exercise is designed to introduce you to Jenkins and continuous
 integration. This will be done in teams of 5 but we will all be working on one
 Jenkins server.
@@ -11,7 +11,7 @@ Jenkins server.
 4. Set up second job to run the program after build completes.
 
 #### Forking the repository
-Someone on your team hopefully has a Github account. Sign in to Github and navigate to www.github.com/jbankes/Hello_Jenkins. Go ahead and fork this repository and clone it to a computer.
+Someone on your team hopefully has a Github account. Sign in to Github and navigate to https://github.com/rishabhverma17/jenkins. Go ahead and fork this repository and clone it to a computer.
 To clone a repository using a Mac/Linux run
 ```
 $ git clone https://github.com/<your_Github_username>/Hello_Jenkins
@@ -79,7 +79,12 @@ Deployment. The point of this is to show downstream/upstream job relationships._
   1. Click _New Item_.
   2. Enter a name for your second job, click _Freestyle Project_, then _OK_.
   3. Go immediately to build step and select _Execute Windows Shell_.
-  4. Enter the following Command `/var/lib/jenkins/workspace/<the name of your first project>/hello_exec`
+  4. Enter the following Command 
+  	
+	cd/
+	cd "Program Files (x86)\Jenkins\workspace\hello_world_compile"
+	hello_exec.exe
+	
   5. Save
 2. Set your first job to call the second
   1. Go to your first job and open the _Configure_ page.
