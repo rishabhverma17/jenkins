@@ -44,7 +44,7 @@ then let me know._
   1. Select _Poll SCM_.
   2. Set up cron job by putting in `H/2 * * * *`.
 6. Set up _Build_.
-  1. Add build step _Execute Shell_.
+  1. Add build step _Execute Windows Shell_.
   2. Enter `make` (This will run the Makefile).
 7. Click _Save_.
 
@@ -78,7 +78,7 @@ Deployment. The point of this is to show downstream/upstream job relationships._
 1. Create a new Job in Jenkins
   1. Click _New Item_.
   2. Enter a name for your second job, click _Freestyle Project_, then _OK_.
-  3. Go immediately to build step and select _Execute Shell_.
+  3. Go immediately to build step and select _Execute Windows Shell_.
   4. Enter the following Command `/var/lib/jenkins/workspace/<the name of your first project>/hello_exec`
   5. Save
 2. Set your first job to call the second
